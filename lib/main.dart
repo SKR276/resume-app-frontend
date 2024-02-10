@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume_app/pages/home.dart';
 
 void main()
 {
@@ -14,6 +15,8 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: HomePage()
+    );
   }
 }
