@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume_app/pages/signin.dart';
 import 'package:resume_app/services/userServices.dart';
 
 class HomePage extends StatefulWidget {
@@ -117,7 +118,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                   ),
                   onPressed: (){
-
+                    Navigator.push(context, MaterialPageRoute(builder:
+                    (context)=>SigninPage()
+                    ));
                   },
                   child: Text("Already have Account ?",style: TextStyle(color: Colors.black),),),
               )
